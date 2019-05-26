@@ -1,2 +1,2 @@
 # sampleapplication
-To understand basic and need of technical topic
+To understand basic and need of technical topic's

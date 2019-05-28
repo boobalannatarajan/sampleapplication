@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: cargill-service
+server:
+  port: 8085

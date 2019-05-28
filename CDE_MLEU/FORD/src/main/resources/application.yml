@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ford-service
+server:
+  port: 8086

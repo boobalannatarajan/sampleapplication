@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: jbhunt-service
+server:
+  port: 8087

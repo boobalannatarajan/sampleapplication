@@ -6,8 +6,8 @@
 	<!-- parent pom -->
     <groupId>com.bootrest.demo</groupId>
     <artifactId>springbootcdemleudemo</artifactId>
-    <packaging>pom</packaging>
-	<version>1.0</version>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	
 	<name>springbootcdemleudemo</name>
 	<description>Spring Boot Demo for CDE MLEU Services</description>
@@ -16,7 +16,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.0.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath></relativePath> <!-- lookup parent from repository -->
 	</parent> 
 
 	<properties>

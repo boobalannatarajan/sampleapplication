@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-    <artifactId>springbootforddemo</artifactId>
+    <artifactId>FORD</artifactId>
     <packaging>jar</packaging>
     
-    <name>springbootforddemo</name>
+    <name>FORD</name>
 	<description>Spring Boot Demo for Ford Service</description>
     
 	<parent>

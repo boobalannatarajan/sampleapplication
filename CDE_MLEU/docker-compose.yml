@@ -1,21 +1,23 @@
 version: '2'
 services:
-  cargill-service:
-    build: ./cargill-service
-    restart: always
-    network_mode: host
-    ports:
-     - "8085:8085"
-  ford-service:
-    build: ./ford-service
-    restart: always
-    network_mode: host
-    ports:
-     - "8086:8086"
-  jbhunt-service:
-    build: ./jbhunt-service
-    restart: always
-    network_mode: host
-    ports:
-     - "8087:8087"      
- 
+   cargill-service:
+      build:
+         context: CARGILL/
+      restart: always
+      network_mode: host
+      ports:
+      - 8085:8085
+   ford-service:
+      build:
+         context: FORD/
+      restart: always
+      network_mode: host
+      ports:
+      - 8086:8086
+   jbhunt-service:
+      build:
+         context: JB_HUNT/
+      restart: always
+      network_mode: host
+      ports:
+      - 8087:8087

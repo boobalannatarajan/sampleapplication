@@ -1,0 +1,12 @@
+.category-item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+.categorybutton, .editcategory, .delete { 
+    width: 5vw;
+    overflow: hidden;  
+}
+/* for deletecategory icon CSS */ 
+.deletecategory{
+    color:maroon;
+}

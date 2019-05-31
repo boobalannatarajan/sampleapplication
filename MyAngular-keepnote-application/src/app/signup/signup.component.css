@@ -1,0 +1,22 @@
+.signup-form-container{
+    width:80vw;
+    margin:5vh auto;
+}
+
+.validation-error{
+    font-size:0.8em;
+    color:red;
+    font-weight: 500;
+}
+
+.jumbotron{
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.user-message,.jumbotron, .validation-error {
+    font-family: 'Montserrat', sans-serif;
+}
+.user-message{
+    color:darkgreen;
+}

@@ -1,0 +1,41 @@
+.menu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: mediumvioletred;
+}
+.note{
+    width: 10em;
+    color:darkcyan;
+}
+mat-sidenav{
+    background-color: rgb(231, 224, 224);
+}
+/* For mat sidenav CSS  cornsilk*/
+.example-container{
+    background-color: blanchedalmond;
+}
+/* reminder and category  icon CSS changes */
+.reminderadd{
+    color:crimson;
+}
+.reminderrefresh{
+    color:blue;
+}
+/* reminder Font and Touch  icon CSS changes */
+.reminderitem{
+    color:darkcyan;
+    font-size: 1.0em;
+    font-family: 'Montserrat', sans-serif;
+}
+.categoryadd{
+    color:crimson;
+}
+.categoryrefresh{
+    color:blue;
+}
+/* Category Font and Touch  icon CSS changes */
+.categoryitem{
+    color:darkcyan;
+    font-size: 1.0em;
+    font-family: 'Montserrat', sans-serif;
+}

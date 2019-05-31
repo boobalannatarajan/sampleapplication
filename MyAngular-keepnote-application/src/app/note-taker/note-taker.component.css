@@ -1,0 +1,32 @@
+.note-expansion-panel-container{
+    width:60vw;
+    margin:10vh;
+    box-shadow: 5px 5px 10px cadetblue;
+	border-radius: .25rem;
+  }
+/* For notes alone */
+  .note-form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    color:brown;
+}
+button:hover{
+    background-color: cadetblue;
+}
+/* For all mat properties */
+.matInput, .mat-button, .error-message, mat-panel-title, mat-expansion-panel{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+   text-decoration: none;
+   font-size: 1.5em;
+    
+}
+/* For validation error CSS */
+.error-message{
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+}

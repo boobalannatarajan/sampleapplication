@@ -1,0 +1,10 @@
+.keep-c-toggle-view {
+	width: 100%;
+	margin-left: 93%;
+	cursor: pointer;
+}
+mat-toolbar{
+    background-color: coral;
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,16 @@
+<!-- Reminder label with edit & Delete icon-->
+<mat-list-item class="reminder-item">
+  <mat-icon class="maticon">label</mat-icon>
+  &nbsp;&nbsp;&nbsp;
+  <h4 class="reminderbutton"> {{reminder.reminderName}}</h4>
+
+  &nbsp;&nbsp;
+  <button class="delete" type="reminderdeletebutton" mat-button (click)="deleteReminder()">
+    <mat-icon class="deletereminder">delete</mat-icon>
+  </button>
+
+  &nbsp;&nbsp;
+  <button class="editreminder" mat-button (click)="editReminder()">
+    <mat-icon class="editreminder">edit</mat-icon>
+  </button>
+</mat-list-item>

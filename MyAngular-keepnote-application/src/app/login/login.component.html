@@ -1,0 +1,25 @@
+<div class="login-form-container">
+    <h2 class="jumbotron"> Login Page </h2>
+    <!-- Login Page with input fields-->
+    <form action="" class="login-form" (submit)="loginSubmit()">
+        <mat-form-field>
+            <input matInput placeholder="Enter UserName" [formControl]='username' class="username" autocomplete="off">
+            <mat-error *ngIf="username.hasError('required') && username.touched">Enter username</mat-error>
+            <mat-error *ngIf="username.hasError('minlength') && username.touched">UserName must be min 5 characters</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="password" placeholder="Enter Password" [formControl]='password' class="password">
+            <mat-error *ngIf="password.hasError('required') && password.touched">Enter password</mat-error>
+            <mat-error *ngIf="password.hasError('minlength') && password.touched">password must be min 5 characters</mat-error>
+        </mat-form-field>
+
+        <button mat-button [disabled]="username.invalid || password.invalid">Login</button>
+        <br/>
+        <h6 class="error-message">{{this.submitMessage}}</h6>
+    </form>
+    <a href=""> New User Registration / </a>
+    <button mat-button class="btn btn-primary" (click)="userSignup()">Sign Up</button>
+
+
+</div>

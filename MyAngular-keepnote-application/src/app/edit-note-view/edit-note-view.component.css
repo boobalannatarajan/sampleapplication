@@ -1,0 +1,25 @@
+/*For note container css changes*/
+.note-form-container{
+    width:60vw;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    color:brown;
+}
+button:hover{
+    background-color: cadetblue;
+}
+.matInput, .mat-button, .error-message, mat-panel-title, mat-expansion-panel{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+   text-decoration: none;
+   font-size: 1.5em;
+    
+}
+/*For validation css changes*/
+.error-message{
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+}

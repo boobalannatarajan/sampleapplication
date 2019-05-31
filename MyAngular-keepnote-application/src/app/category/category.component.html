@@ -1,0 +1,17 @@
+<mat-list-item class="category-item">
+    <mat-icon class="maticon">label</mat-icon>
+    &nbsp;&nbsp;&nbsp;
+    <!-- Onload / refresh category-->
+    <button class="categorybutton" mat-button (click)="getNotesByCategory(category.categoryName)"> {{category.categoryName}} </button>
+    &nbsp;&nbsp;
+    <!-- Delete category-->
+    <button class="delete" type="categorydelete" mat-button (click)="deleteCategory()">
+        <mat-icon class="deletecategory">delete</mat-icon>
+    </button>
+    <!-- Edit category-->
+    <button class="editcategory" mat-button (click)="editCategory()">
+        <mat-icon class="maticon">edit</mat-icon>
+    </button>
+    &nbsp;&nbsp;
+
+</mat-list-item>

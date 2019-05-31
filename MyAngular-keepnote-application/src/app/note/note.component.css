@@ -1,0 +1,29 @@
+.card {
+    box-shadow: 5px 5px 10px cadetblue;
+    border-radius: .50rem;
+    margin: 1em;
+    min-width: 10vh;
+}
+.card-text, h3, mat-card-title, .category, .reminder {
+    font-family: 'Montserrat', sans-serif;
+}
+/* For Reminder CSS */
+.reminder{
+    color: blueviolet;
+    font-size: 0.8em;
+}
+/* For Category CSS */
+.category{
+    color: darkorange;
+    font-size: 0.8em;
+}
+/* For maticon delete CSS */
+.maticon{
+    color: maroon;
+   
+}
+
+
+
+
+ 

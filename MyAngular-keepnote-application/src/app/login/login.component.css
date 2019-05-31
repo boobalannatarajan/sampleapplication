@@ -1,0 +1,23 @@
+.login-form-container{
+    width:80vw;
+    margin:10vh auto;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+h2,.mat-form-field,.mat-button,.error-message {
+
+    font-family: 'Montserrat', sans-serif;
+    color:darkslategray;
+    font-size: 1.2em;
+}
+/* Making Login page as jumbotron*/
+.jumbotron{
+    background-color: grey;
+    text-align: center;
+    color:darkred;
+}
+.error-message{
+    color:red;
+}

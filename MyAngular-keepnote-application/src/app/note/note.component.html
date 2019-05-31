@@ -1,0 +1,21 @@
+<!-- Each Note in dashboard with delete action-->
+<mat-card class="card">
+    <mat-card-header (click)="routeToEditNoteView()">
+        <mat-card-title class="card-title">{{note.noteTitle}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content class="card-body-content" (click)="routeToEditNoteView()">
+        <p class="card-text">{{note.noteContent}}</p>
+    </mat-card-content>
+
+    <mat-card-footer>
+        &nbsp;&nbsp;
+        <button class="category" mat-button [disabled]="true">{{category.categoryName}}</button>
+        &nbsp;&nbsp;
+        <div *ngFor="let str of reminderNames">
+            <h4 class="reminder">{{str}}</h4>
+        </div>
+        <button type="notedeletebutton" (click)="deleteNote()"><mat-icon class="maticon" (click)="deleteNote()">delete</mat-icon></button>
+        &nbsp;&nbsp;
+    </mat-card-footer>
+</mat-card>

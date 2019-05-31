@@ -1,0 +1,62 @@
+<!-- HeaderComponent to be displayed as part of AppComponent -->
+<app-header></app-header>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')">
+    <!-- Notes icon-->
+    <mat-list>
+      <mat-list-item>
+        <button class="note" mat-button (click)="getNotesView()"> Notes &nbsp;
+          <mat-icon class="maticon">note</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <!-- Reminder icon-->
+      <mat-list-item>
+        <button class="note" mat-button (click)="getNotesReminderView()"> Reminder &nbsp;
+          <mat-icon class="maticon">touch_app</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <!-- load reminder -->
+      <mat-list-item class="reminderitem">Reminder &nbsp;
+        <button class="reminderrefresh" mat-button (click)="loadReminders()">
+          <mat-icon class="maticon">refresh</mat-icon>
+        </button>
+        <!-- add reminder -->
+        <button class="reminderadd" type="newreminder" mat-button (click)="addReminder()">
+          <mat-icon class="maticon">add</mat-icon>
+        </button>
+      </mat-list-item>
+      <app-reminder [reminder]="reminder" *ngFor="let reminder of reminders"></app-reminder>
+      <mat-divider></mat-divider>
+
+      <!-- load Category -->
+      <mat-list-item class="categoryitem">Category &nbsp;
+        <button class="categoryrefresh" mat-button (click)="loadCategories()">
+          <mat-icon class="maticon">refresh</mat-icon>
+        </button>
+        <!-- add Category -->
+        <button class="categoryadd" type="newcategory" mat-button (click)="addCategory()">
+          <mat-icon class="maticon">add</mat-icon>
+        </button>
+      </mat-list-item>
+      <app-category [category]="category" *ngFor="let category of categories"></app-category>
+      <mat-divider></mat-divider>
+      <mat-divider></mat-divider>
+    </mat-list>
+  </mat-sidenav>
+
+  <!-- Main Menu  -->
+  <mat-sidenav-content>
+    <p>
+      <button type="menuslide" class="menu" mat-button (click)="sidenav.toggle()">
+        <mat-icon class="maticon">apps</mat-icon>
+        Menu
+      </button>
+    </p>
+
+    <!-- Login/Dashboard component to be rendered based on route -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,14 @@
+.reminderbutton, .edit, .delete{
+    width: 5vw;
+    overflow: hidden;  
+}
+
+.reminderbutton{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+/* for deletereminder icon CSS */ 
+.deletereminder{
+    color:maroon;
+}
+

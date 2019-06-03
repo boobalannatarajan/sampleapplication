@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/keepnoteApp?createDatabaseIfNotExist=true&verifyServerCertificate=false&useSSL=false&requireSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: userauthentication-service
+server:
+  port: 8083

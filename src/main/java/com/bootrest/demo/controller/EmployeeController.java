@@ -3,19 +3,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bootrest.demo.model.Employee;
 
 @RestController
+@RequestMapping("/restAPI/")
 public class EmployeeController {
 	
-	@RequestMapping("/")
+	@RequestMapping("/welcomeNote")
     public String getWelcomeNote() 
     {
 		return "Welcome to CDE ML community practise session";
     }
-	@RequestMapping("/empDetails")
+	@RequestMapping(value="empDetails", method=RequestMethod.GET)
     public List<Employee> getEmployees() 
     {
 		List<Employee> employeesList = new ArrayList<Employee>();

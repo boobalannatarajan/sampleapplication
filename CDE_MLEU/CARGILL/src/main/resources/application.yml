@@ -3,3 +3,11 @@ spring:
     name: cargill-service
 server:
   port: 8085
+  
+security:
+   basic:
+    enabled: true
+user:
+    name: cargill
+    password: cargill
+ 
